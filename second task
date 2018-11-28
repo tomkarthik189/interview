@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+void main()
+{
+    FILE *fptr;
+    char name[20];
+  
+    
+ 
+    
+    fptr = fopen("word_frequency.txt", "w");
+ 
+    if (fptr == NULL)
+    {
+        printf("File does not exists \n");
+        return;
+    }
+    printf("Enter the name \n");
+    scanf("%s", name);
+    fprintf(fptr, "Name    = %s\n", name);
+    
+}
